@@ -20,12 +20,12 @@
         vm.isSmart = isSmart();
         // config
         vm.app = {
-          name: 'Flatkit',
+          name: 'Knox',
           version: '1.1.0',
           // for chart colors
           color: {
-            'primary':      '#0cc2aa',
-            'accent':       '#a88add',
+            'primary':      '#2670AA',
+            'accent':       '#D92841',
             'warn':         '#fcc100',
             'info':         '#6887ff',
             'success':      '#6cc788',

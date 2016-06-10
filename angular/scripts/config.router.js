@@ -42,8 +42,8 @@
               url: '/dashboard',
               templateUrl: dashboard,
               data : { title: 'Dashboard' },
-              controller: "ChartCtrl",
-              resolve: load(['scripts/controllers/chart.js'])
+              controller: "DashboardCtrl",
+              resolve: load(['scripts/controllers/knox-controllers/dashboard-controller.js'])
             })
 
             .state('app.home', {
