@@ -49,7 +49,9 @@
         "moment/moment.js",
         "moment/locale/**",
         "underscore/underscore-min.js",
-        "dropzone/dist/min/**"
+        "dropzone/dist/min/**",
+        "firebase/**",
+        "angularfire/dist/**"
       ],
       "dest": "libs/js",
       "cwd": "bower_components",
