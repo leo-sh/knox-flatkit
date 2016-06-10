@@ -167,7 +167,9 @@
     "twitter-bootstrap-wizard": "~1.0.0",
     "underscore": "~1.8.3",
     "venturocket-angular-slider": "~0.3.2",
-    "waves": "~0.7.2"
+    "waves": "~0.7.2",
+    "firebase": "^3.0.4",
+    "angularfire": "^2.0.1"
   },
   "resolutions": {
     "angular": "~1.x",
