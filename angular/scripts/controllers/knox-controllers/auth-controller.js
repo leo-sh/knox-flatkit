@@ -1,4 +1,4 @@
-app.controller('AuthCtrl', ['$rootScope', '$scope', '$firebaseAuth', function($rootScope, $scope, $firebaseAuth) {
+angular.module('app').controller('AuthCtrl', ['$rootScope', '$scope', '$firebaseAuth', '$window', function($rootScope, $scope, $firebaseAuth, $window) {
     'use strict';
 
     //console.log(currentAuth);
@@ -18,6 +18,7 @@ app.controller('AuthCtrl', ['$rootScope', '$scope', '$firebaseAuth', function($r
 
     $scope.logout = function() {
         $firebaseAuth().signOut();
+        $window.location.reload();
     }
 
 
@@ -142,42 +143,5 @@ app.controller('AuthCtrl', ['$rootScope', '$scope', '$firebaseAuth', function($r
     };
 
 
-    $scope.loginFacebook = function() {
-
-        $firebaseAuth.$authWithOAuthPopup('facebook', function(error, authData) {
-            if (error) {
-                console.log('Firebase facebook login with popup failed!', error);
-            } else {
-                console.log('Authenticated successfully with payload:', authData);
-            }
-        });
-
-
-    };
-
-
-    $scope.loginTwitter = function() {
-
-        $firebaseAuth.$authWithOAuthPopup('twitter', function(error, authData) {
-            if (error) {
-                console.log('Firebase Twitter Login Failed!', error);
-            } else {
-                console.log('Authenticated successfully with Twitter, payload:', authData);
-            }
-        });
-    };
-
-
-    // An alert dialog
-    $scope.showAlert = function(title, message) {
-        var alertPopup = $ionicPopup.alert({
-            title: title,
-            template: message
-        });
-
-        alertPopup.then(function(res) {
-
-        });
-    };
 
 }]);

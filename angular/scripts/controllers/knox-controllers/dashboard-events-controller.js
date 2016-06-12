@@ -1,6 +1,6 @@
-app.controller('ManageEventsCtrl', ['$scope', '$filter', 'NgTableParams',
-  'FirebaseConfig', 'EventService', '$templateCache', '$uibModal', 'uiGmapGoogleMapApi',
-  function($scope, $filter, NgTableParams, FirebaseConfig, EventService, $templateCache, $uibModal, uiGmapGoogleMapApi) {
+angular.module('app').controller('DashboardEventsCtrl', ['$scope', '$filter', 'NgTableParams',
+  'FirebaseConfig', 'EventService', '$templateCache', 'uiGmapGoogleMapApi',
+  function($scope, $filter, NgTableParams, FirebaseConfig, EventService, $templateCache, uiGmapGoogleMapApi) {
     'use strict';
     var self = this;
 

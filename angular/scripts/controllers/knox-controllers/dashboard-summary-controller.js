@@ -1,4 +1,4 @@
-app.controller('AccountCtrl', ['$scope', '$filter',
+app.controller('DashboardSummaryCtrl', ['$scope', '$filter',
     function($scope, $filter) {
         'use strict';
 

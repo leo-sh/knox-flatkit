@@ -21,7 +21,9 @@
         'ui.load',
         'ui.jp',
         'oc.lazyLoad',
-        'firebase'
+        'firebase',
+        'ngTable',
+        'uiGmapgoogle-maps'
       ]);
 })();
 

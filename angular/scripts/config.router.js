@@ -40,11 +40,24 @@
           })
             .state('app.dashboard', {
               url: '/dashboard',
-              templateUrl: dashboard,
+              templateUrl: '../views/dashboard/dashboard.4.html',
               data : { title: 'Dashboard' },
               controller: "DashboardCtrl",
               resolve: load(['scripts/controllers/knox-controllers/dashboard-controller.js'])
             })
+            .state('app.dashboard.summary', {
+              url: '/summary',
+              templateUrl: '../views/dashboard/dashboard.summary.html',
+              controller: "DashboardSummaryCtrl",
+              resolve: load(['scripts/controllers/knox-controllers/dashboard-summary-controller.js'])
+            })
+            .state('app.dashboard.events', {
+              url: '/events',
+              templateUrl: '../views/dashboard/dashboard.events.html',
+              controller: "DashboardEventsCtrl",
+              resolve: load(['scripts/controllers/knox-controllers/dashboard-events-controller.js'])
+            })
+
 
             .state('app.home', {
               url: '/home',
