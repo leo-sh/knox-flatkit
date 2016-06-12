@@ -5614,3 +5614,6 @@ textarea.md-input {
 .fade-in-down.ng-leave {
   -webkit-animation: fadeOutDown 0.5s;
   animation: fadeOutDown 0.5s; }
+
+.home-bg {
+  background-image: url("assets/images/knox-home/home-bg.jpg"); }
