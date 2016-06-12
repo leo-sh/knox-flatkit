@@ -12,9 +12,9 @@
       .module('app')
       .controller('AppCtrl', AppCtrl);
 
-      AppCtrl.$inject  = ['$scope', '$localStorage', '$location', '$rootScope', '$anchorScroll', '$timeout', '$window'];
+      AppCtrl.$inject  = ['$scope', '$localStorage', '$location', '$rootScope', '$anchorScroll', '$timeout', '$window', '$firebaseAuth'];
 
-      function AppCtrl($scope, $localStorage, $location, $rootScope, $anchorScroll, $timeout, $window) {
+      function AppCtrl($scope, $localStorage, $location, $rootScope, $anchorScroll, $timeout, $window, $firebaseAuth) {
         var vm = $scope;
         vm.isIE = isIE();
         vm.isSmart = isSmart();
@@ -123,6 +123,34 @@
               results = regex.exec(location.search);
           return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
         }
+
+        /* KNOX FUNCTIONS */
+
+        $scope.autData = $rootScope.authData;
+
+        $scope.logout = function() {
+          $firebaseAuth().$signOut();
+        }
+
+        $scope.render = {
+          loggedIn: function() {
+            return ($rootScope.autData !== null && $rootScope.authData !== undefined);
+          },
+          loggingIn: function() {
+              return $scope.loggingIn;
+          },
+          errorLoggingIn: function() {
+              return $scope.errorLoggingIn;
+          }
+        };
+
+        $scope.login = function(){
+          console.log('Trying to open login form');
+          openLoginModal();
+        };
+
+         /* KNOX FUNCTIONS */
+
 
       }
 })();

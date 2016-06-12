@@ -4,17 +4,22 @@
         </a>
         <div ui-include="'../views/blocks/navbar.brand.html'"></div>
 
-        <!-- nabar right -->
-        <ul class="nav navbar-nav pull-right">
+        <!-- nabar right LOGGED OUT -->
+        <ul ng-if="render.loggedIn()" class="nav navbar-nav pull-right">
           <li class="nav-item">
+            <a href="dashboard.4.html" class="nav-link" ui-sref="app.dashboard.summary" ui-sref-active="active">
+              <span class="nav-text">Dashboard</span>
+            </a>
+          </li>
+          <!--li class="nav-item">
             <a class="nav-link" ui-fullscreen>
               <span><i class="fa fa-fw fa-arrows-v"></i></span> 
             </a>
-          </li>
+          </li-->
           <li class="nav-item dropdown">
             <a href class="nav-link" data-toggle="dropdown">
               <i class="material-icons">&#xe5c3;</i>
-              <span class="label up p-a-0 accent"></span>
+              <!--span class="label up p-a-0 accent"></span-->
             </a>
             <div ui-include="'../views/blocks/dropdown.grid.html'"></div>
           </li>
@@ -25,29 +30,33 @@
             </a>
             <div ui-include="'../views/blocks/dropdown.notification.html'"></div>
           </li>
-          <li class="nav-item dropdown">
+          <li  class="nav-item dropdown">
             <a href class="nav-link dropdown-toggle clear" data-toggle="dropdown">
               <span class="avatar w-32">
-                <img src="../assets/images/a2.jpg" alt="...">
-                <i class="busy b-white right"></i>
+                <img ng-src="{{authData.photoURL}}" alt="...">
+                <!--i class="busy b-white right"></i-->
               </span>
             </a>
             <div ui-include="'../views/blocks/dropdown.user.html'"></div>
           </li>
         </ul>
         <!-- / navbar right -->
+        <!-- nabar right LOGGED IN -->
+        <ul ng-if="!render.loggedIn()" class="nav navbar-nav pull-right">
+          <li class="nav-item">
+            <a ng-click="login()" class="nav-link">
+              <span class="nav-text">Login</span>
+            </a>
+          </li>
+        </ul>
+        <!-- / navbar right -->
 
         <!-- navbar collapse -->
         <div class="collapse navbar-toggleable-sm" id="navbar-4" data-pjax>
-          <div ui-include="'../views/blocks/navbar.form.right.html'"></div>
+          <div ui-include="'../views/blocks/navbar.form.html'"></div>
           <!-- link and dropdown -->
           <ul class="nav navbar-nav pull-left nav-active-border b-{{app.setting.theme.primary}}">
-            <li class="nav-item">
-              <a href="dashboard.4.html" class="nav-link" ui-sref="app.dashboard" ui-sref-active="active">
-                <span class="nav-text">Dashboard</span>
-              </a>
-            </li>
-            <li class="nav-item dropdown pos-stc">
+            <!--li class="nav-item dropdown pos-stc">
               <a href class="nav-link dropdown-toggle" data-toggle="dropdown">
                 <span class="nav-text">UI</span>
               </a>
@@ -74,7 +83,7 @@
                 <a class="dropdown-item hide" ui-sref="app.note.list" ng-class="{'show': 1}"><span class="nav-text">Note</span></a>
                 <a class="dropdown-item hide" ui-sref="app.todo" ng-class="{'show': 1}"><span class="nav-text">Todo</span></a>
               </div>
-            </li>
+            </li-->
           </ul>
           <!-- / link and dropdown -->
         </div>

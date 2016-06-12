@@ -1,5 +1,5 @@
 {
-  "name": "Flatkit",
+  "name": "knox-flatkit",
   "description": "Bootstrap 4 Web App UI Kit with AngularJS",
   "license": "Envato REGULAR LICENSE",
   "homepage": "",
@@ -51,7 +51,11 @@
         "underscore/underscore-min.js",
         "dropzone/dist/min/**",
         "firebase/**",
-        "angularfire/dist/**"
+        "angularfire/dist/**",
+        "ng-table/dist/ng-table.js",
+        "angular-google-maps/dist/angular-google-maps.js",
+        "angular-simple-logger/dist/angular-simple-logger.js",
+        "lodash/lodash.js"
       ],
       "dest": "libs/js",
       "cwd": "bower_components",
@@ -102,7 +106,8 @@
         "angular-motion/dist/*.*",
         "bootstrap-additions/dist/*.*",
         "bootstrap/dist/css/**",
-        "bootstrap/scss/**"
+        "bootstrap/scss/**",
+        "ng-table/dist/ng-table.css"
       ],
       "dest": "assets",
       "cwd": "bower_components",
@@ -171,7 +176,9 @@
     "venturocket-angular-slider": "~0.3.2",
     "waves": "~0.7.2",
     "firebase": "^3.0.4",
-    "angularfire": "^2.0.1"
+    "angularfire": "^2.0.1",
+    "ng-table": "^0.8.3",
+    "angular-google-maps": "^2.3.3"
   },
   "resolutions": {
     "angular": "~1.x",
