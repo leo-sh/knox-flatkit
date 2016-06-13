@@ -23,7 +23,9 @@
         'oc.lazyLoad',
         'firebase',
         'ngTable',
-        'uiGmapgoogle-maps'
+        'uiGmapgoogle-maps',
+        'formly',
+        'formlyBootstrap'
       ]);
 })();
 

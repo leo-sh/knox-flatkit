@@ -55,7 +55,10 @@
         "ng-table/dist/ng-table.js",
         "angular-google-maps/dist/angular-google-maps.js",
         "angular-simple-logger/dist/angular-simple-logger.js",
-        "lodash/lodash.js"
+        "lodash/lodash.js",
+        "angular-formly/dist/formly.js",
+        "angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js",
+        "api-check/dist/api-check.js"
       ],
       "dest": "libs/js",
       "cwd": "bower_components",
@@ -178,7 +181,9 @@
     "firebase": "^3.0.4",
     "angularfire": "^2.0.1",
     "ng-table": "^0.8.3",
-    "angular-google-maps": "^2.3.3"
+    "angular-google-maps": "^2.3.3",
+    "angular-formly": "^8.2.1",
+    "angular-formly-templates-bootstrap": "^6.3.2"
   },
   "resolutions": {
     "angular": "~1.x",
