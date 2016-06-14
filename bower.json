@@ -183,7 +183,8 @@
     "ng-table": "^0.8.3",
     "angular-google-maps": "^2.3.3",
     "angular-formly": "^8.2.1",
-    "angular-formly-templates-bootstrap": "^6.3.2"
+    "angular-formly-templates-bootstrap": "^6.3.2",
+    "angular-spinner": "^0.8.1"
   },
   "resolutions": {
     "angular": "~1.x",
