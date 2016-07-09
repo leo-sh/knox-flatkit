@@ -57,6 +57,12 @@
               controller: "DashboardEventsCtrl",
               resolve: load(['scripts/controllers/knox-controllers/dashboard-events-controller.js'])
             })
+            .state('app.dashboard.events.item', {
+              url: '/{id:[0-9]{1,4}}',
+              templateUrl: '../views/dashboard/dashboard.events.item.html',
+              controller: "DashboardEventsItemCtrl",
+              resolve: load(['scripts/controllers/knox-controllers/dashboard-events-item-controller.js'])
+            })
 
 
             .state('app.home', {

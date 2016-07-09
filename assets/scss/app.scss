@@ -12,5 +12,39 @@
 
 
 .home-bg {
-    background-image: url("assets/images/knox-home/home-bg.jpg");
+    background-image: url("../images/knox-home/home-bg.jpg");
+    background-size: 100%;
+}
+
+.ImgDiv {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.ImgDiv img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.comonSection {
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+}
+.sectionTitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.feaArea3 {
+    padding-top: 75px;
+}
+.textbox {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.text-right {
+    text-align: right;
 }
