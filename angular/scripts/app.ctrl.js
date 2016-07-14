@@ -24,8 +24,8 @@
           version: '1.1.0',
           // for chart colors
           color: {
-            'primary':      '#2670AA',
-            'accent':       '#D92841',
+            'primary':      '#D5575B',
+            'accent':       '#f77474',
             'warn':         '#fcc100',
             'info':         '#6887ff',
             'success':      '#6cc788',
