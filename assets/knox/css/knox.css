@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "knox";
+  src:url("../fonts/knox.eot");
+  src:url("../fonts/knox.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/knox.woff") format("woff"),
+    url("../fonts/knox.ttf") format("truetype"),
+    url("../fonts/knox.svg#knox") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "knox" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="knox-"]:before,
+[class*=" knox-"]:before {
+  font-family: "knox" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.knox-binoculars:before {
+  content: "\61";
+}
+.knox-clothes-hanger:before {
+  content: "\62";
+}
+.knox-idea:before {
+  content: "\63";
+}
+.knox-map:before {
+  content: "\64";
+}
+.knox-megaphone:before {
+  content: "\65";
+}
+.knox-stats:before {
+  content: "\66";
+}
+.knox-ticket:before {
+  content: "\67";
+}

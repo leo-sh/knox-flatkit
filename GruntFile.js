@@ -181,4 +181,6 @@ module.exports = function(grunt) {
         'clean:html',
         'assemble'
     ]);
+
+    grunt.registerTask('default',['watch']);
 };

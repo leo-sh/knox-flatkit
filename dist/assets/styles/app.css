@@ -5615,6 +5615,9 @@ textarea.md-input {
   -webkit-animation: fadeOutDown 0.5s;
   animation: fadeOutDown 0.5s; }
 
+.home-bg {
+  background-image: url("../images/knox-home/bg.jpg"); }
+
 .ImgDiv {
   width: 100%;
   position: relative;
